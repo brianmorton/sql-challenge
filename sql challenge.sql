@@ -6,12 +6,14 @@ CREATE TABLE departments (
 
 CREATE TABLE dept_manger (
   dept_no VARCHAR(30) NOT NULL,
-  emp_no VARCHAR(30) 
+  emp_no VARCHAR(30),
+PRIMARY KEY(dept_no, emp_no)
 )
 
 CREATE TABLE dept_emp (
   emp_no VARCHAR(30),
-  dept_no VARCHAR(30)
+  dept_no VARCHAR(30),
+PRIMARY KEY(dept_no, emp_no)
 )
 
 CREATE TABLE employees (
